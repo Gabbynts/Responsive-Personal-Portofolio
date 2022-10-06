@@ -231,7 +231,7 @@ img{
 
 /*Active link*/
 .active-link{
-    bottom: 0;
+    color: var(--first-color);
 }
 
 /*==================================== HOME ======================================*/
@@ -687,7 +687,7 @@ img{
 
 }
 
-.active-mdoal{
+.active-modal{
     opacity: 1;
     visibility: visible;
 }
