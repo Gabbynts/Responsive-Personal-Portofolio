@@ -408,7 +408,7 @@ img{
 
 .about__description{
     text-align: center;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: 3rem;
 }
 
 .about__info{
@@ -514,7 +514,7 @@ img{
 }
 
 .skills__js{
-    width: 60%;
+    width: 90%;
 }
 
 .skills__react{
@@ -546,7 +546,7 @@ img{
 }
 
 .skills__photoshop{
-    width: 60%;
+    width: 90%;
 }
 
 .skills__close .skills__list{
@@ -628,6 +628,10 @@ img{
 
 .qualification__active[data-content]{
     display: block;
+}
+
+.qualification__part{
+    padding-left: 1rem;
 }
 
 /*==================================== SERVICES ======================================*/
@@ -750,7 +754,7 @@ img{
 }
 
 .portofolio__description{
-    margin-bottom: var(--mb-0-75);
+    margin-bottom: var(--mb-2-5);
 }
 
 .portofolio__button:hover .button__icon{
@@ -777,6 +781,10 @@ img{
 
 .swiper-container-horizontal > .swiper-pagination-bullets{
     bottom: -2.5rem;
+}
+
+.swiper-container-horizontal{
+    margin-top: 10rem;
 }
 
 .swiper-pagination-bullet-active{
@@ -1076,7 +1084,6 @@ img{
     }
     .about__container,
     .skills__container,
-    .portofolio__content,
     .project__container,
     .contact__container,
     .footer__container{
@@ -1268,7 +1275,7 @@ img{
         right: -3.5rem;
     }
     .swiper-container-horizontal > .swiper-pagination-bullets{
-        bottom: -4.5rem;
+        bottom: -10rem;
     }
 
     .contact__form{
