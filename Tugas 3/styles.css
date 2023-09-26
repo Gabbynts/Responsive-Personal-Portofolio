@@ -1,0 +1,45 @@
+.navbar,
+.navbar-nav,
+.nav-item {
+  padding: 10px 0 10px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 65%;
+  }
+}
+
+.nav-item{
+    font-weight: 600;
+    padding: 0 3px 0 3px;
+}
+
+.paragraph{
+    font-weight: 500;
+}
+
+.bi-chevron-double-right{
+    font-size: 9px;
+    margin: 2px 5px 0 5px;
+}
+
+.breadcrumb{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.breadcrumb > .active{
+    font-weight: 500;
+}
+
+p{
+    margin: 0;
+}
+
+.images-p{
+    font-weight: 500;
+    color: #636262;
+}
+
+
