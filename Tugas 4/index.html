@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .container {
+        background-color: #d0e9ee;
+        width: fit-content;
+        padding: 15px 10px 15px 10px;
+        border: 2mm ridge #90abb0;
+      }
+
+      input[type="text"] {
+        font-size: 30px;
+        font-weight: 600;
+        width: 255px;
+        padding: 10px 15px 10px 15px;
+        color: #445e62;
+        background-color: #d0e9ee;
+        border: 2mm ridge #90abb0;
+      }
+      
+      button {
+        background-color: #7fa2a7;
+        width: 60px;
+        height: 80px;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        margin-top: 5px;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="d-flex flex-column align-items-center">
+      <div class="container mt-5">
+        <input type="text" id="display" readonly class="mb-2"/>
+        <div>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('+')">+</button>
+        </div>
+        <div>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('-')">-</button>
+        </div>
+        <div>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('*')">x</button>
+        </div>
+
+        <div>
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="appendToDisplay('/')">÷</button>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function appendToDisplay(value) {
+        document.getElementById("display").value += value;
+      }
+
+      function clearDisplay() {
+        document.getElementById("display").value = "";
+      }
+
+      function calculate() {
+        const result = eval(document.getElementById("display").value);
+        document.getElementById("display").value = result;
+      }
+    </script>
+  </body>
+</html>
